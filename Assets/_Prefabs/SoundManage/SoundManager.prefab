@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3629893785242728496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3629893785242728498}
+  - component: {fileID: 3629893785242728497}
+  - component: {fileID: -2843007076398475276}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: SoundManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3629893785242728498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629893785242728496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.67, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3629893785242728497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629893785242728496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e0a35e9b493a74793e53405792c8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Dying
+    clip: {fileID: 8300000, guid: 51f7f1c6a69b1e746919aacc261724b6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 0}
+    name: Theme
+    clip: {fileID: 8300000, guid: e2f552298fa0c9e4aba35ac9b1439b60, type: 3}
+    volume: 0.127
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Attacked
+    clip: {fileID: 8300000, guid: 4371da3b6ea56d549be044fef67104c0, type: 3}
+    volume: 0.765
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: collect
+    clip: {fileID: 8300000, guid: a9f5c6b7c36a3da41b01444f353f3faa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: click
+    clip: {fileID: 8300000, guid: b3d7fb385a2c4dd45ab83c825b83cecb, type: 3}
+    volume: 0.765
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: resume
+    clip: {fileID: 8300000, guid: 189b8245495f21545914fed739e5acc2, type: 3}
+    volume: 0.765
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: pause
+    clip: {fileID: 8300000, guid: 6a030c83412b82a4da658110118fd378, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: dead
+    clip: {fileID: 8300000, guid: 34b6404177858fa489c76c5d1e7ca131, type: 3}
+    volume: 0.765
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: jump
+    clip: {fileID: 8300000, guid: 372084b81e605864081fb249acad1ca4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: EatSeed
+    clip: {fileID: 8300000, guid: 7bdc6b438571ace4d83f23fa413c2f7d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: InventoryClick
+    clip: {fileID: 8300000, guid: f475653ce12bc2341833c5535f776288, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: LaserCharge
+    clip: {fileID: 8300000, guid: 205882940baecf04f9b6d7b554e4d999, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: EnemyShoot
+    clip: {fileID: 8300000, guid: f10912c4930673146ad9dc5a58979541, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Poof
+    clip: {fileID: 8300000, guid: 83d4cb81d16d10e4daa54dd32962d8ae, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: PlayerShoot
+    clip: {fileID: 8300000, guid: 11d0cdba023e62c4e87d0e0633b7a845, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: BouncePad
+    clip: {fileID: 8300000, guid: 181caa8cdc0c98e4faec72fd47132041, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Enemy1Hit1
+    clip: {fileID: 8300000, guid: eddce35fa1502ea4baefa37c8cc02ebd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Enemy1Hit2
+    clip: {fileID: 8300000, guid: 47506993e731f994ea09b432b3be6c50, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: SlimeHit
+    clip: {fileID: 8300000, guid: bf04fe87b822eac40affdcd104c88ec6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: Enemy2Hit
+    clip: {fileID: 8300000, guid: f9e1c50f32717e642a3a79aee47ebcf7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - mainmusic: {fileID: 0}
+    sfxgroup: {fileID: 24300002, guid: 7fe6a62349153854aa8a76b6c19148a1, type: 2}
+    name: QuestMenu
+    clip: {fileID: 8300000, guid: 91eb85815c5b629458fa2e63bdb489c0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &-2843007076398475276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629893785242728496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c5073486f343c4e91d8c64cb958e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invertJump: 0
+  invertMove: 0
