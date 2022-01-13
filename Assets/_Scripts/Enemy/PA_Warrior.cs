@@ -195,23 +195,25 @@ public class PA_Warrior : MonoBehaviour
             {
                 if (!NavAgent.hasPath || NavAgent.velocity.sqrMagnitude == 0f)
                 {
-                     
+              
                      anim.SetBool("Moving", false);
                 }
             }
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("IdleAnim") )
         {
-             anim.SetBool("InAir", false);
-                Transform[] ts = gameObject.transform.GetComponentsInChildren<Transform>();
-                foreach (Transform t in ts){
-                     if (t.gameObject.name == "Particle"){
-                          t.GetChild(0).gameObject.SetActive(false);
-                     }
-                }
-                leftWing.enabled = false;
-                rightWing.enabled = false;
-                isMoving =false;
+            //Cache in variable. <--
+
+             //anim.SetBool("InAir", false);
+             //   Transform[] ts = gameObject.transform.GetComponentsInChildren<Transform>();
+             //   foreach (Transform t in ts){
+             //        if (t.gameObject.name == "Particle"){
+             //             t.GetChild(0).gameObject.SetActive(false);
+             //        }
+             //   }
+             //   leftWing.enabled = false;
+             //   rightWing.enabled = false;
+             //   isMoving =false;
         }
         
     }

@@ -205,7 +205,7 @@ public class PlayerMovement : MonoBehaviour
     {
         anim.SetTrigger("Shoot");
         Vector3 offset = transform.forward * 0.3f;
-        GameObject b = Instantiate(bullet, transform.position + offset, new Quaternion(0, 0, 0, 0));
+        GameObject b = Instantiate(bullet, transform.position + offset, new Quaternion(0, 0, 0, 0));  
         b.GetComponent<LazerScript>().direction = transform.forward;
         FindObjectOfType<SoundManager>().Play("PlayerShoot");
     }
@@ -243,7 +243,7 @@ public class PlayerMovement : MonoBehaviour
         GameObject aBtn = GameObject.Find("A_Btn");
         GameObject bBtn = GameObject.Find("B_Btn");
         GameObject joystickLeft = GameObject.Find("Joystick Left");
-        GameObject joystickRight = GameObject.Find("Joystick Right");
+        GameObject joystickRight = GameObject.Find("Joystick Right");  //screen transform utility.
         Vector2 aPos = aBtn.transform.position;
         Vector2 bPos = bBtn.transform.position;
         Vector2 JL = joystickLeft.transform.position;
